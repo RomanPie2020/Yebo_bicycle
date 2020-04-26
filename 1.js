@@ -6,3 +6,13 @@ $(document).ready(function () {
         dots: true,
     });
 });
+
+// burger menu
+$(document).ready(function () {
+    $('.burger-btn').click(function (event) {
+        $('.burger-btn, .burger-menu').toggleClass('active');
+        $('body').toggleClass('lock');
+        
+    });
+    
+});
