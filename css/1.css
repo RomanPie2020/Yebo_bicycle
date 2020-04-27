@@ -647,10 +647,34 @@ ul, ol {
   padding-bottom: 110px;
 }
 
+@media (max-width: 576px) {
+  .section-sye {
+    height: 500px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .sye {
   width: 535px;
   margin: 0 auto;
   text-align: center;
+}
+
+@media (max-width: 576px) {
+  .sye {
+    width: 100%;
+  }
 }
 
 .sye__title {
@@ -667,11 +691,29 @@ ul, ol {
           justify-content: space-between;
 }
 
+@media (max-width: 576px) {
+  .sye__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .sye .sye__form-email {
   width: 400px;
   height: 70px;
   border: 1px #d3d7d9 solid;
   font-size: 20px;
+}
+
+@media (max-width: 576px) {
+  .sye .sye__form-email {
+    width: 80%;
+  }
 }
 
 .sye .sye__form-email::-webkit-input-placeholder {
@@ -720,6 +762,12 @@ ul, ol {
   color: #fff;
 }
 
+@media (max-width: 576px) {
+  .sye .sye__form-btn {
+    margin-top: 25px;
+  }
+}
+
 .footer {
   background: #f7f7f7;
   height: 250px;
@@ -731,6 +779,18 @@ ul, ol {
           align-items: center;
 }
 
+@media (max-width: 768px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
 .footer-contacts {
   width: 33.33333%;
   display: -webkit-box;
@@ -739,6 +799,18 @@ ul, ol {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .footer-contacts {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-contacts {
+    width: 50%;
+  }
 }
 
 .footer-contacts__name {
@@ -766,6 +838,12 @@ ul, ol {
       -ms-flex-pack: center;
           justify-content: center;
   width: 33.33333%;
+}
+
+@media (max-width: 576px) {
+  .footer-social-links {
+    width: 100%;
+  }
 }
 
 .twitter {
@@ -856,6 +934,13 @@ ul, ol {
       -ms-flex-pack: center;
           justify-content: center;
   width: 33.33333%;
+}
+
+@media (max-width: 576px) {
+  .footer-handcraft {
+    display: block;
+    text-align: center;
+  }
 }
 
 .footer-handcraft__text {
