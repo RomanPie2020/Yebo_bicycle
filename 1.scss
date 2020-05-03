@@ -60,7 +60,7 @@ ul,ol {
     width: 40px;
     height: 30px;
     position: relative;
-    margin-top: 60px;
+    margin-top: 45px;
     margin-right: 15px;
 }
 .burger-btn span{
@@ -103,7 +103,7 @@ ul,ol {
     bottom: 14px;   
 }
 .burger-menu {
-    // display: none;
+    
     position: fixed;
     width: 100%;
     height: 100%;
@@ -119,6 +119,7 @@ ul,ol {
 .burger-menu.active{
     top: 0;
 }
+
 .burger-menu-links{
     margin-top: 180px;
     
@@ -131,15 +132,15 @@ ul,ol {
         padding: 50px 0;
         color:#000;
         text-transform: uppercase;
-        font-size: 30px;
+        font-size: 24px;
         
         
     }
 }
 .burger-logo{
     display: none;
-    margin-top: 35px;
-    margin-left: 15px;
+    margin-top: 15px;
+    margin-left: 5px;
 }
 @media (max-width: 992px){
     .burger-btn {
@@ -153,7 +154,7 @@ ul,ol {
         display: none;
     }
     .fixed-header{
-        height: 150px;
+        height: 120px;
         display: flex;
         justify-content: space-between;
     }
@@ -195,7 +196,8 @@ ul,ol {
 // vintage oliva
 
 .section-vo {
-    display: flex;  
+    display: flex; 
+
 }
 
 .section-vo-bike-img {
@@ -264,8 +266,54 @@ ul,ol {
     display: block;
     height: 33.33333%;
 }
+@media  (max-width: 1199px) {
+    .section-vo {
+        display: block;
+        
+        padding: 20px 0;
+        
+
+    }
+    .section-vo-bike-img{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .section-vo-info-pof-img {
+        flex-direction: row;
+        align-items: center;
+        width: 95%;
+        margin: 0 auto;
+
+    
+
+    }
+    .section-vo-info{
+        height: auto;
+        width: 50%;
+    }
+    .section-vo-info__text{
+        width: 90%;
+    }
+    .section-vo-partofbike-img{
+        width: 50%;
+    }
+
+}
+@media (max-width: 767px){
+     .section-vo-info-pof-img {
+         flex-direction: column;
+         
 
 
+
+    }
+    .section-vo-partofbike-img {
+        width: 60%;
+    }
+    .section-vo-info {
+        width: 80%;
+    }
+}
 // LA Bariosa
 .section-lb {
     display: flex;
@@ -339,7 +387,63 @@ ul,ol {
     display: block;
     height: 33.33333%;
 }
+@media (max-width: 1199px) {
+    .section-lb {
+        display: block;
 
+        padding: 20px 0;
+
+
+    }
+
+    .section-lb-bike-img {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .section-lb-info-pof-img {
+        flex-direction: row;
+        align-items: center;
+        width: 95%;
+        margin: 0 auto;
+
+
+
+    }
+
+    .section-lb-info {
+        height: auto;
+        width: 50%;
+    }
+
+    .section-lb-info__text {
+        width: 90%;
+    }
+
+    .section-lb-partofbike-img {
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .section-lb-info-pof-img {
+        flex-direction: column;
+
+
+
+
+    }
+
+    .section-lb-partofbike-img {
+        width: 60%;
+        margin-bottom: 15px;
+    }
+
+    .section-lb-info {
+        width: 80%;
+    }
+}
 //Retro Bike 
 
 .section-rb {
@@ -422,6 +526,59 @@ ul,ol {
     height: 100%;
     
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+   
+    .section-rb-bike-img1,
+    .section-rb-info-pof-img,
+    .section-rb-bike-img2 {
+        width: 50%;
+    }
+
+    .section-rb-bike-img2 {
+        margin: 0 auto;
+    }
+
+    .section-rb {
+        flex-wrap: wrap;
+        width: 95%;
+        margin: 0 auto;
+        
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .section-rb {
+        display: block;
+        
+    }
+    .section-rb-info-pof-img{
+        align-items: center;
+    }
+    .section-rb-partofbike-img {
+        
+        width: 60%;
+        margin-bottom: 15px;
+        
+    }
+    
+    .section-rb-info{
+        width: 80%;
+        
+    }
+    .section-rb-info__text{
+        width: 90%;
+    }
+    .section-rb-bike-img1,
+    .section-rb-info-pof-img,
+    .section-rb-bike-img2 {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+
 
 
 // slider
@@ -430,7 +587,11 @@ ul,ol {
     margin: 0 auto;
     padding-top: 120px;
     padding-bottom: 175px;
-   
+    @media (max-width: 575px)  {
+        padding-top: 60px;
+        padding-bottom: 120px;
+        width: 80%;
+    }
 }
 
 .slide {
@@ -465,7 +626,19 @@ ul,ol {
 
 
 // shop now
-
+@media (min-width: 768px) and (max-width: 1199x) {
+    .section-sn-saddles,
+    .section-sn-bikes,
+    .section-sn-another{
+        width: 50%;
+    }
+    .section-sn-another{
+        margin: 0 auto;
+    }
+    .section-sn{
+        flex-wrap: wrap;
+    }
+}
 .section-sn{
     display: flex;
    
@@ -530,6 +703,7 @@ ul,ol {
 }
 
 .shop-now{
+    
     a{
         display: block;
         height: 100%;
@@ -541,23 +715,66 @@ ul,ol {
         }
     }
 } 
-.shop-now:hover .shop-now-hover {
-    opacity: 1;
-    
+@media (min-width: 1200px){
+    .shop-now:hover .shop-now-hover {
+        opacity: 1;
+
+    }
+
+    .shop-now-hover {
+
+        background: rgba(100, 194, 158, 0.8) url('../img/logos/logo (4).png') no-repeat center;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 100;
+        transition: .5s linear;
+        opacity: 0;
+
+    }
 }
-.shop-now-hover{
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .section-sn-saddles,
+    .section-sn-bikes,
+    .section-sn-another {
+        width: 50%;
+    }
+
+    .section-sn-another {
+        margin: 0 auto;
+    }
+
+    .section-sn {
+        flex-wrap: wrap;
+        padding-bottom: 80px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
     
-    background: rgba(100, 194, 158, 0.8) url('../img/logos/logo (4).png') no-repeat center;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 100;
-    transition: .5s linear;
-    opacity: 0;
-
+    .section-sn-saddles,
+    .section-sn-bikes,
+    .section-sn-another {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 767px) {
+    .section-sn {
+        display: block;
+        padding-bottom: 50px;
+    }
+}
+@media (max-width: 575px){
+    .section-sn-saddles,
+    .section-sn-bikes,
+    .section-sn-another {
+        width: 95%;
+        margin: 0 auto;
+    }
 }
 
 // discover the shop
@@ -569,6 +786,9 @@ ul,ol {
     display: flex;
     justify-content: center;
     align-items: center;
+     @media(max-width: 768px) {
+        height: 100px;
+     }
 }
 
 .section-dts-link {
@@ -591,11 +811,19 @@ ul,ol {
     justify-content: center;
     align-items: center;
     transition: .5s;
+
+    @media(max-width: 768px){
+        width: 200px;
+        height: 35px;
+    }
     
 }
-.section-dts-link:hover{
-    background: #4D4959;
+@media(min-width: 1200px){
+   .section-dts-link:hover {
+       background: #4D4959;
+   }
 }
+
 // send your e-mail
 .section-sye {
     height: 470px;
@@ -766,9 +994,10 @@ ul,ol {
         color: #fff;
     }
 }
-
-.twitter:hover .fa-twitter {
-    color: #282f35;
+@media(min-width: 1200px){
+   .twitter:hover .fa-twitter {
+       color: #282f35;
+   }
 }
 
 // facebook
@@ -789,10 +1018,12 @@ ul,ol {
     }
 
 }
-
-.facebook:hover .fa-facebook-f {
-    color: #282f35;
+@media(min-width: 1200px) {
+    .facebook:hover .fa-facebook-f {
+        color: #282f35;
+    }
 }
+
 
 // pinterest
 .pinterest {
@@ -811,9 +1042,12 @@ ul,ol {
     }
 }
 
-.pinterest:hover .fa-pinterest {
-    color: #282f35;
+@media(min-width: 1200px) {
+    .pinterest:hover .fa-pinterest {
+        color: #282f35;
+    }
 }
+
 // footer-handcraft 
 .footer-handcraft {
     display: flex;
